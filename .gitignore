@@ -1,0 +1,5 @@
+CoreRoot/__pycache__/
+venv/
+db.sqlite3
+CoreRoot/migrations/__pycache__/
+CoreRoot/local_settings.py
