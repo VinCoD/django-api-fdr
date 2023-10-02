@@ -9,3 +9,5 @@ core/user/migrations/__pycache__/
 core/migrations/__pycache__/
 core/auth/__pycache__/
 core/auth/migrations/__pycache__/
+core/auth/serializers/__pycache__/
+core/auth/viewsets/__pycache__/
