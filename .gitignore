@@ -3,3 +3,7 @@ venv/
 db.sqlite3
 CoreRoot/migrations/__pycache__/
 CoreRoot/local_settings.py
+core/__pycache__/
+core/user/__pycache__/
+core/user/migrations/__pycache__/
+core/migrations/__pycache__/
