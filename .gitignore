@@ -11,3 +11,5 @@ core/auth/__pycache__/
 core/auth/migrations/__pycache__/
 core/auth/serializers/__pycache__/
 core/auth/viewsets/__pycache__/
+core/post/__pycache__/
+core/post/migrations/__pycache__/
