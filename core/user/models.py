@@ -64,6 +64,7 @@ class User(AbstractModel, AbstractBaseUser, PermissionsMixin):
     avatar = models.ImageField(null=True, blank=True, upload_to=user_directory_path)
     is_active = models.BooleanField(default=True)
     is_superuser = models.BooleanField(default=False)
+    posts_liked = models.ManyToManyField("core_post.Post", related_name="liked_by")
     # created = models.DateTimeField(auto_now=True)
     # updated = models.DateTimeField(auto_now_add=True)
 
@@ -71,6 +72,18 @@ class User(AbstractModel, AbstractBaseUser, PermissionsMixin):
     REQUIRED_FIELDS = ['username']
 
     objects = UserManager()
+
+    def like(self, post):
+        """Like `post` if it hasn't been done yet"""
+        return self.posts_liked.add(post)
+
+    def remove_like(self, post):
+        """Remove a like from a `post`"""
+        return self.posts_liked.remove(post)
+
+    def has_liked(self, post):
+        """Return True if the user has liked a `post`; else False"""
+        return self.posts_liked.filter(pk=post.pk).exists()
 
     def __str__(self):
         return f"{self.email}"
