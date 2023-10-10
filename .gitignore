@@ -15,3 +15,4 @@ core/post/__pycache__/
 core/post/migrations/__pycache__/
 core/comment/__pycache__/
 core/comment/migrations/__pycache__/
+core/abstract/__pycache__/
