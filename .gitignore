@@ -16,3 +16,4 @@ core/post/migrations/__pycache__/
 core/comment/__pycache__/
 core/comment/migrations/__pycache__/
 core/abstract/__pycache__/
+.idea/
