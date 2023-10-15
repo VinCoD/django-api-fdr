@@ -1,7 +1,7 @@
 asgiref==3.7.2
 gunicorn
 Django
-django-cors-headers==4.3.0
+django-cors-headers
 django-filter==23.3
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.0
